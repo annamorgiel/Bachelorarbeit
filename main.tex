@@ -1,0 +1,88 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage[german]{babel}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{microtype}
+\usepackage{varioref}
+\usepackage[german]{babel}
+\usepackage{minted}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{cleveref}
+\usepackage{icomma}
+\usepackage{dirtytalk}
+\usepackage{tabu,booktabs}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false, breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false] {hyperref}
+\newcommand*{\re}{\textsuperscript{\textregistered}\,}
+
+
+% % % % % % % % % % % % % % % % % % % % %
+%Schriften - nur eine auskommentieren
+	%Latin Modern - Standard
+		%\usepackage{lmodern}
+	%Times Roman für strenge Dozenten
+		%\usepackage{times}
+	%Garamond - sieht toll aus, aber eher exotisch
+		%\usepackage[cmintegrals,cmbraces]{newtxmath}\usepackage{ebgaramond-maths}\usepackage{helvet}
+
+%Hurenkinder, Schusterjungen
+\widowpenalties=3 10000 10000 150
+
+% % % % % % % % % % % % % % % % % % % % %
+%LITERATUR
+%Fußnote _ODER_ Amerikanisch auskommentieren
+
+%Deutsches Fußnotensystem
+%\usepackage[backend=biber,style=authortitle-dw,firstfull,maxcitenames=1]{biblatex}\DeclareFieldFormat{title}{\mkbibemph{#1}}\DeclareFieldFormat{citetitle}{\mkbibemph{#1}}\renewcommand{\cite}{\footcite}
+%Ressource
+%\addbibresource{quellen.bib}
+% % % % % % % % % % % % % % % % % % % % %
+\makeatletter
+\begin{document}
+		\input{texes/metadaten.tex}
+		\input{texes/titlepage.tex}
+		\pagebreak{}
+\onehalfspacing
+%einzelne Kapiteln einlesen
+\overfullrule=2cm
+\input{texes/abstrakt.tex}
+\newpage
+\input{texes/abstrakt_english.tex}
+\input{texes/eiderkl.tex}
+\pagebreak{}
+
+\tableofcontents
+\vspace{4mm}
+\hrule
+\begin{center}\autorname~$\cdot$ \autormatr~$\cdot$ \href{mailto:\autormail}{\autormail}\end{center}
+\pagebreak
+
+
+\input{texes/kapitel_1_motivation.tex}
+\pagebreak{}
+\input{texes/kapitel_2_grundlagen.tex}
+\pagebreak{}
+\input{texes/kapitel_3_konzeption.tex}
+\pagebreak{}
+\input{texes/kapitel_4_implementierung.tex}
+\pagebreak{}
+\input{texes/kapitel_5_evaluiereung.tex}
+\pagebreak{}
+\input{texes/kapitel_6_fazit.tex}
+\pagebreak{}
+\input{texes/abkuerzungen.tex}
+\pagebreak{}
+\input{texes/bedanken.tex}
+\pagebreak{}
+\input{texes/kapitel_7_appendix.tex}
+\bibliographystyle{alphaurl}
+\bibliography{quellen}
+\end{document}

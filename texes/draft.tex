@@ -1,0 +1,24 @@
+\subsubsection{Rahmenbedingungen}
+%TODO kein separates Kapitel, muss bis der nächsten Version evaluiert werden
+Dieser Abschnitt beschreibt meine empirischen Beobachtungen bezüglich dem Nutzen der Software, um die Erkennbarkeit des Gesichts zu verbessern.
+Die Beleuchtung und Kamera-Winkel spielen eine Rolle bei der Emotionsanalysen.
+Die optimalen Ergebnisse bekommt man bei gleichmäßig ausgeleuchteten frontalen Gesichter.
+Es wäre auch gut, soweit möglich auf Brillen zu verzichten, da die Spiegelung den Licht Verlauf beeinflussen könnte.
+
+\subsection{Evaluation}
+Ziel der Evaluation war die Untersuchung der anfangs gestellten Forschungsfragen und das Finden von Fehlern, Schwachstellen und neuen Ideen. Die Ergebnisse bilden eine Grundlage für zukünftige Erweiterungen und Verbesserungen des Moduls. 
+
+\subsection{Studie}
+Es gab zwei Stellen für Verbesserung der Steuerbarkeit. \\
+Viele Probanden fühlten sich unsicher ob das Ergebnis bei 0\% bleibt, weil die Zielemotion gerade falsch nachahmt wird oder vielleicht befindet sich das Gesicht gerade außer dem Kamerafeld. Es wird an keiner Stelle markiert und 14 Probanden haben ihre Meinung dazu geäußert. 
+Die Unsicherheit beim Steuern führte bei fast allen Probanden zu einer leichten Frustration. Dieser Faktor ist unter der Beachtung von Game Based Learning Prinzipien zu vermeiden.  
+Die zweite Stelle für möglichen Verbesserungen ist bei der gleichen Mimikry Variante zu sehen. Die Zielemotion wird für 10 Sekunden präsentiert, bevor es automatisch zu der eigentlichen Aufgabe gewechselt wird. 10 Probanden haben versucht, den Schritt in dem die Zielemotion präsentiert wird zu überspringen und haben nach einem Knopf gesucht, der die eigentliche Aufgabe starten könnte. Während dieser Phase hätte der Faktor von Kohärenz stärker ausgeprägt sein können. Sieben Probanden haben sogar die Fläche, wo der Knopf sein könnte angeklickt. Fünf Probanden haben sich nach dem Spielen es auch gewünscht, diese Möglichkeit zu haben. 
+Neun Probanden haben zusätzlich berichtet, sie würden gerne die Mechanismen hinter der Aufgabenbewertung besser verstehen. Allgemein nach dem Game Based Learning Prinzipien %TODO TOBIAS, Quelle?
+sollte man versuchen, die Software transparent und intuitiv zu gestalten.
+\subsection{Die Meinung des Patienten mit einer Autismus Diagnose}
+Der einzige Proband mit einer Autismus Diagnose aus der Gruppe hat sehr viele Interessante Bemerkungen betätigt. Seines Erachtens nach ist die App für ihn nicht besonders nützlich, weil er gewohnt ist, eigentlich immer eine Begleitperson dabei zu haben. Die Begleitperson betreut ihn fast ständig und leistet Hilfe in sozialen und beruflichen Situationen. Wegen der fast ständigen Anwesenheit von der Begleitperson ist für ihn persönlich die App nicht erforderlich. An der Stelle wurde dem Probanden eine Frage dazu gestellt. Er war in der Lage, sich eine Situation vorzustellen, wo diese Betretung nicht anwesend wäre. In dieser Situation könnte er sich vorstellen, von der Nutzung unserer Software zu profitieren.\\
+Das führt schließlich dazu, dass man selbständiger im Alltag wird und es war ein sehr interessantes Erkenntnis aus der Studie.
+
+
+
+Die gesammelten Daten wurden lokal auf dem Gerät gespeichert mittels einer MySQLite Datenbank mit der Bibliothek Room als eine separate Abstraktionsschicht.
